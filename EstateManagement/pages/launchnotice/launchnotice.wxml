@@ -1,0 +1,32 @@
+<!-- 报修信息填写 -->
+<view class="form">
+  <!-- 公告标题 -->
+  <view class="row-group">
+    <view class="icontips iconfont icon-biaoti iconcolor"></view>
+    <text>公告标题</text>
+    <input placeholder="请填写活动标题" placeholder-class='txt' maxlength='20' value="{{title}}" bindinput="titlechoice" />
+  </view>
+  <!-- 发布时间 -->
+  <view class="row-group">
+    <view class="icontips iconfont icon-shijian iconcolor"></view>
+    <text>发布时间</text>
+    <view class="section">
+      <picker mode="date" value="{{dates}}" start="{{dates}}" end="2022-6-30" bindchange="datechoice">
+        {{dates}}
+      </picker>
+    </view>
+  </view>
+  <!-- 公告内容 -->
+  <view class="row-group">
+    <view class="icontips iconfont icon-neirong iconcolor"></view>
+    <text>公告内容</text>
+  </view>
+  <textarea placeholder="请填写公告内容" placeholder-class='txt' bindinput="contentchoice">
+    <view class="descriptionlength">{{descriptionlength}}/140</view>
+  </textarea>
+</view>
+
+<!-- 发布按钮 -->
+<view>
+  <button class="submit" bindtap="launch">发布</button>
+</view>

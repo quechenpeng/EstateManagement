@@ -1,0 +1,46 @@
+<!-- 标题 -->
+<view class="top">
+  <view class="text">
+    <view class="texttext">公</view>
+    <view class="texttext">告</view>
+  </view>
+  <view class="image">
+    <image src="https://i.loli.net/2021/03/13/Kp4cJDPBwxO2SQr.png"></image>
+  </view>
+</view>
+
+<!-- 空白 -->
+<view class="blank"></view>
+
+<!-- 公告循环 -->
+<view class="form">
+  <view wx:for="{{notice}}" wx:key="id" wx:for-item="item">
+    <!-- 公告123... -->
+    <navigator url="../noticereading/noticereading?noticeid={{item._id}}&readingvolume={{item.readingvolume}}">
+      <view class="box">
+        <view class="blankleft"></view>
+        <view class="content">
+          <view class="contentleft">
+            <view class="year">{{item.year}}</view>
+            <view class="monthday">{{item.monthday}}
+            </view>
+          </view>
+          <view class="contentright">
+            <view class="contenttitle">{{item.title}}</view>
+            <view class="contentcontent">{{item.content}}</view>
+            <view class="contentreadingvolume">
+              <view class="iconfont icon-yueduliang iconreadingvolume"></view>
+              <view class="textreadingvolume">
+                {{item.readingvolume}}
+              </view>
+            </view>
+          </view>
+        </view>
+        <view class="blankright"></view>
+      </view>
+    </navigator>
+
+    <!-- 空白 -->
+    <view class="blank"></view>
+  </view>
+</view>

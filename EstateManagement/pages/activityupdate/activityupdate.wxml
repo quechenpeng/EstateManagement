@@ -1,0 +1,43 @@
+<!-- 活动信息填写 -->
+<view class="form">
+  <!-- 活动标题 -->
+  <view class="row-group">
+    <view class="icontips iconfont icon-biaoti iconcolor"></view>
+    <text>活动标题</text>
+    <input placeholder="请填写活动标题" placeholder-class='txt' maxlength='20' value="{{title}}" bindinput="titlechange" />
+  </view>
+  <!-- 发布时间 -->
+  <view class="row-group">
+    <view class="icontips iconfont icon-shijian iconcolor"></view>
+    <text>发布时间</text>
+    <view class="section">
+      <picker mode="date" value="{{dates}}" start="{{dates}}" end="2022-6-30" bindchange="bindDateChange">
+        {{dates}}
+      </picker>
+    </view>
+  </view>
+  <!-- 活动图片 -->
+  <view class="row-group">
+    <view class="icontips iconfont icon-tupian iconcolor"></view>
+    <text>活动图片</text>
+    <image src="{{src}}" bindtap="srcchange"></image>
+  </view>
+  <!-- 活动内容 -->
+  <view class="row-group">
+    <view class="icontips iconfont icon-neirong iconcolor"></view>
+    <text>活动内容</text>
+  </view>
+  <textarea bindinput="contentchange">{{content}}
+    <view class="descriptionlength">{{descriptionlength}}/140</view>
+  </textarea>
+</view>
+<!-- 底部 -->
+<view class="bottom">
+  <view class="blank"></view>
+  <!-- 更新 -->
+  <button class="submit" bindtap="update">更新</button>
+  <view class="blank"></view>
+  <!-- 删除 -->
+  <button class="submit" bindtap="delete">删除</button>
+  <view class="blank"></view>
+</view>

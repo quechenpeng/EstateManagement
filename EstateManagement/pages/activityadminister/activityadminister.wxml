@@ -1,0 +1,28 @@
+<!-- 提示 -->
+<view class="tips">共发布了{{activitylength}}项活动~</view>
+<!-- 活动总览 -->
+<view class="form">
+  <view wx:for="{{activity}}" wx:key="id" wx:for-item="item">
+    <view class="modular">
+      <navigator url="../activityupdate/activityupdate?activityid={{item._id}}">
+        <view class="left">
+          <view class="lefttop">
+            <view class="time">{{item.year}}-{{item.monthday}}</view>
+          </view>
+          <view class="leftbottom">
+            <view class="title">活动标题：{{item.title}}</view>
+          </view>
+        </view>
+        <view class="right">
+          <image src="{{item.src}}"></image>
+        </view>
+      </navigator>
+    </view>
+  </view>
+</view>
+<!-- 去发布 -->
+<view class="bottom">
+  <view class="circle" bindtap="launchactivity">
+    <view class="iconfont icon-chuangjian create"></view>
+  </view>
+</view>

@@ -1,0 +1,66 @@
+<!-- 最上方 -->
+<view class="top">
+  <!-- 头像 -->
+  <view class="headportrait">
+    <image src="{{headportraitsrc}}" bindtap="chooseheadportrait"></image>
+  </view>
+  <!-- 昵称 -->
+  <view class="nickname">
+    <view>{{nickname}}</view>
+  </view>
+  <!-- 编辑 -->
+  <view class="edit">
+    <image class="iconfont icon-bianji edit" bindtap="editinformation"></image>
+  </view>
+</view>
+
+<!-- 我的服务 -->
+<view class="service">
+  <!-- 标题 -->
+  <view class="title">我的服务</view>
+  <!-- 设备报修 -->
+  <view class="modular" bindtap="reportrepair">
+    <view class="rricon">
+      <view class="iconfont icon-baoxiu1 iconsize"></view>
+    </view>
+    <view class="rrtitle">设备报修</view>
+    <view class="rrarrow">
+      <view class="iconfont icon-jiantou jiantou"></view>
+    </view>
+  </view>
+  <!-- 我的报修 -->
+  <view class="modular" bindtap="myreportrepair">
+    <view class="rricon">
+      <view class="iconfont icon-yibaoxiu iconsize"></view>
+    </view>
+    <view class="rrtitle">我的报修</view>
+    <view class="rrarrow">
+      <view class="iconfont icon-jiantou jiantou"></view>
+    </view>
+  </view>
+  <!-- 修改密码 -->
+  <view class="modular" bindtap="changepassword">
+    <view class="rricon">
+      <view class="iconfont icon-xiugaimima iconsize"></view>
+    </view>
+    <view class="rrtitle">修改密码</view>
+    <view class="rrarrow">
+      <view class="iconfont icon-jiantou jiantou"></view>
+    </view>
+  </view>
+  <!-- 退出登录 -->
+  <view class="modular" bindtap="clear">
+    <view class="rricon">
+      <view class="iconfont icon-tuichu iconsize"></view>
+    </view>
+    <view class="rrtitle">退出登录</view>
+    <view class="rrarrow">
+      <view class="iconfont icon-jiantou jiantou"></view>
+    </view>
+  </view>
+</view>
+
+<!-- 回到首页 -->
+<view>
+  <button open-type="getUserInfo" class="backhome" bindtap="backhome">回到首页</button>
+</view>

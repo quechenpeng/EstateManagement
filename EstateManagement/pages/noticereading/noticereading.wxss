@@ -1,0 +1,152 @@
+page {
+  background-color: #f1f5fc;
+}
+
+.noticeandcomment {
+  margin-bottom: 100px;
+}
+
+.box {
+  padding: 20rpx 0;
+  border-bottom: 1rpx solid #ddd;
+  background-color: #ffffff;
+}
+
+.title {
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: 360;
+  letter-spacing: 1px;
+}
+
+.content {
+  width: 100%;
+}
+
+.content {
+  width: 90%;
+  margin-left: 5%;
+  font-size: 15px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  text-indent: 32px;
+  color: rgb(29, 25, 25);
+}
+
+.date {
+  width: 30%;
+  margin-top: 30px;
+  margin-left: 65%;
+  font-weight: 340;
+}
+
+.blank {
+  width: 100%;
+  height: 10px;
+  background-color: #ffffff;
+  border-bottom: 1rpx solid #ddd;
+}
+
+.tip {
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  font-size: 13px;
+  text-align: center;
+  color: rgb(98, 99, 100);
+}
+
+.row-group {
+  padding: 20rpx 0;
+  position: relative;
+  border-bottom: 1rpx solid #ddd;
+  display: flex;
+  height: 70px;
+  background-color: #ffffff;
+}
+
+.left {
+  width: 12%;
+  height: 100%;
+}
+
+.right {
+  width: 88%;
+  height: 100%;
+}
+
+.headportrait {
+  width: 30px;
+  height: 30px;
+  margin-top: 5px;
+  border-radius: 30px;
+  background-color: #fff;
+  margin-left: 5px;
+}
+
+.headportrait image {
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+}
+
+.nickname {
+  width: 100%;
+  height: 40%;
+  color: #ddd;
+  font-size: 15px;
+  margin-left: 2px;
+}
+
+.commentcontent {
+  width: 100%;
+  height: 50%;
+  font-size: 15px;
+  margin-left: 2px;
+}
+
+.datetime {
+  width: 100%;
+  height: 10%;
+  color: #ddd;
+  font-size: 12px;
+  text-align: right;
+}
+
+.ask {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+}
+
+.input {
+  width: 600rpx;
+  border: 1rpx solid #f1f1f1;
+  margin: 12rpx 0rpx 12rpx 20rpx;
+  border-radius: 30rpx;
+  background: #f1f5fc;
+  font-size: 25rpx;
+  text-align: center;
+  height: 30px;
+  line-height: 30px;
+}
+
+.button {
+  background: #6fb442;
+  color: white;
+  border-radius: 30rpx;
+  font-size: 30rpx;
+  width: 130rpx;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 12rpx 20rpx;
+}

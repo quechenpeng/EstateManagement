@@ -1,0 +1,24 @@
+<view id="total">
+  <!-- 手机号 -->
+  <view id="t1">
+    <text>手机号</text>
+    <input type="number" name="username" id="use" placeholder="请输入手机号" value="{{phone}}" bindinput="phone"
+      maxlength="11"></input>
+  </view>
+  <!-- 密码 -->
+  <view id="t2">
+    <text>密码</text>
+    <input type="password" name="password1" id="pass1" placeholder="请输入密码" value="{{password}}" bindinput="password"
+      maxlength="15"></input>
+  </view>
+  <!-- 确认密码 -->
+  <view id="t3">
+    <text>确认密码</text>
+    <input type="password" name="password2" id="pass2" placeholder="请确认密码" value="{{confirmpassword}}"
+      bindinput="confirmpassword" maxlength="15"></input>
+  </view>
+  <!-- 注册 -->
+  <button id="btn1" form-type="submit" bindtap="register">
+    <text>注册</text>
+  </button>
+</view>

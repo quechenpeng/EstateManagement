@@ -1,0 +1,59 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/activity/activity",
+    "pages/notice/notice",
+    "pages/reportrepair/reportrepair",
+    "pages/parking/parking",
+    "pages/login/login",
+    "pages/activityreading/activityreading",
+    "pages/noticereading/noticereading",
+    "pages/personalhomepage/personalhomepage",
+    "pages/changepassword/changepassword",
+    "pages/myreportrepair/myreportrepair",
+    "pages/administrator/administrator",
+    "pages/editinformation/editinformation",
+    "pages/register/register",
+    "pages/myreportrepairreading/myreportrepairreading",
+    "pages/administratorlogin/administratorlogin",
+    "pages/activityadminister/activityadminister",
+    "pages/noticeadminister/noticeadminister",
+    "pages/reportrepairadminister/reportrepairadminister",
+    "pages/useradminister/useradminister",
+    "pages/masteradminister/masteradminister",
+    "pages/launchactivity/launchactivity",
+    "pages/activityupdate/activityupdate",
+    "pages/launchnotice/launchnotice",
+    "pages/noticeupdate/noticeupdate",
+    "pages/reportrepairupdate/reportrepairupdate",
+    "pages/userreading/userreading"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#ededed",
+    "navigationBarTitleText": "物业管理",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "borderStyle": "black",
+    "color": "#bfbfbf",
+    "position": "bottom",
+    "selectedColor": "#2c2c2c",
+    "list": [{
+        "pagePath": "pages/index/index",
+        "text": "主页",
+        "iconPath": "images/主页.png",
+        "selectedIconPath": "images/主页选择态.png"
+      },
+      {
+        "pagePath": "pages/login/login",
+        "text": "我的",
+        "iconPath": "images/我的.png",
+        "selectedIconPath": "images/我的选择态.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

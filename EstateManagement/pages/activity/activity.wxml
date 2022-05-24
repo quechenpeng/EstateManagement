@@ -1,0 +1,36 @@
+<!-- 标题 -->
+<view class="top">
+  <view class="text">
+    <view class="texttext">活</view>
+    <view class="texttext">动</view>
+  </view>
+  <view class="image">
+    <image src="https://i.loli.net/2021/03/13/JoWV5wsc2F3QUTK.png"></image>
+  </view>
+</view>
+<!-- 空白 -->
+<view class="blank"></view>
+<!-- 活动循环 -->
+<view class="form">
+  <view wx:for="{{activity}}" wx:key="id" wx:for-item="item">
+    <navigator url="../activityreading/activityreading?activityid={{item._id}}">
+      <!-- 节日123... -->
+      <view class="box">
+        <view class="blankleft"></view>
+        <view class="content">
+          <view class="words">
+            <view class="year">{{item.year}}</view>
+            <view class="monthday">{{item.monthday}}</view>
+          </view>
+          <view class="image">
+            <image src="{{item.src}}"></image>
+          </view>
+        </view>
+        <view class="blankright"></view>
+      </view>
+    </navigator>
+
+    <!-- 空白 -->
+    <view class="blank"></view>
+  </view>
+</view>

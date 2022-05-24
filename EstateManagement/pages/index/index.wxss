@@ -1,0 +1,118 @@
+@import "../../styles/iconfont.wxss";
+
+.logo {
+  width: 100%;
+  height: 130px;
+}
+
+.logo image {
+  width: 90%;
+  height: 100%;
+  line-height: 130px;
+  display: flex;
+  justify-content: center;
+}
+
+.blank {
+  width: 100%;
+  height: 20px;
+}
+
+.box {
+  width: 100%;
+  height: 100px;
+  display: flex;
+}
+
+.blankleft {
+  width: 5%;
+  height: 100px;
+}
+
+.content {
+  width: 100%;
+  height: 100px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px #f8f8f8;
+  display: flex;
+}
+
+.blankright {
+  width: 5%;
+  height: 100px;
+}
+
+navigator {
+  width: 90%;
+  height: 100px;
+  border-radius: 10px;
+}
+
+.viewicon {
+  width: 30%;
+  height: 100px;
+}
+
+.viewtitle {
+  width: 50%;
+  height: 100px;
+}
+
+.viewarrow {
+  width: 20%;
+  height: 100px;
+}
+
+.viewiconcircle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  background-color: #f5f6f7;
+  margin-left: 50rpx;
+  margin-top: 50rpx;
+}
+
+.viewiconcircle view {
+  font-size: 30px;
+  line-height: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.viewtitleblanktop {
+  width: 100%;
+  height: 20px;
+}
+
+.viewchinese {
+  width: 100%;
+  height: 30px;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.viewtitleblankcenter {
+  width: 100%;
+  height: 1px;
+}
+
+.viewenglish {
+  width: 100%;
+  height: 20px;
+  color: gray;
+  font-size: 15px;
+}
+
+.viewtitleblankbottom {
+  width: 100%;
+  height: 39px;
+}
+
+.viewarrow view {
+  width: 20px;
+  height: 20px;
+  margin-left: 20px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}

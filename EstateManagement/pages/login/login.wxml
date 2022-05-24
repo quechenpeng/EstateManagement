@@ -1,0 +1,35 @@
+<!-- logo -->
+<view class="logo">
+  <image src="https://i.loli.net/2021/03/11/pEMsTvhFumlUXKS.png"></image>
+</view>
+
+<!-- 输入框、确认按钮 -->
+<view class="form">
+  <!-- 手机 -->
+  <view class="row-group">
+    <text>手机</text>
+    <input type="number" placeholder="请填写手机号码" placeholder-class='txt' maxlength='11' value="{{inputphone}}"
+      bindinput="phone" />
+  </view>
+  <!-- 密码 -->
+  <view class="row-group">
+    <text>密码</text>
+    <input type="text" placeholder="请填写密码" placeholder-class='txt' maxlength='15' value="{{inputpassword}}"
+      bindinput="password" password="true" />
+  </view>
+  <!-- 登录按钮 -->
+  <view>
+    <view class="circle">
+      <view class="iconfont icon-jiantou-you jinatoustyle" bindtap="LoginRegister"></view>
+    </view>
+  </view>
+  <!-- 管理员登录、用户注册 -->
+  <view class="bottom">
+    <!-- 管理员登录 -->
+    <view class="administrator" bindtap="administratorlogin">管理员登录</view>
+    <!-- 分割线 -->
+    <view class="dividingline">|</view>
+    <!-- 用户注册 -->
+    <view class="register" bindtap="register">用户注册</view>
+  </view>
+</view>

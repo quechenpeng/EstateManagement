@@ -1,0 +1,83 @@
+<!-- 导航条 -->
+<view class="navbar">
+  <text wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}" wx:key="unique"
+    bindtap="navbarTap">{{item}}</text>
+</view>
+<!--全部-->
+<view hidden="{{currentTab!==0}}">
+  <view class="tips">共查询到{{alllength}}条数据~</view>
+  <view wx:for="{{all}}" wx:key="id" wx:for-item="item">
+    <navigator url="../myreportrepairreading/myreportrepairreading?reportrepairid={{item._id}}">
+      <view class="modular">
+        <view class="part1">
+          <view class="time">创建时间：{{item.launchtime}}</view>
+          <view class="people">联系人：{{item.people}}</view>
+          <view wx:if='{{item.state=="已创建"}}' class="statecreated">{{item.state}}</view>
+          <view wx:elif='{{item.state=="待处理"}}' class="statepending">{{item.state}}</view>
+          <view wx:else='{{item.state=="已处理"}}' class="stateprocessed">{{item.state}}</view>
+        </view>
+        <view class="part2">
+          <view class="phone">联系电话：{{item.phone}}</view>
+          <view class="repairequipment">报修设备：{{item.repairequipment}}</view>
+        </view>
+      </view>
+    </navigator>
+  </view>
+</view>
+<!--已创建-->
+<view hidden="{{currentTab!==1}}">
+  <view class="tips">共查询到{{createdlength}}条数据~</view>
+  <view wx:for="{{created}}" wx:key="id" wx:for-item="item">
+    <navigator url="../myreportrepairreading/myreportrepairreading?reportrepairid={{item._id}}">
+      <view class="modular">
+        <view class="part1">
+          <view class="time">{{item.launchtime}}</view>
+          <view class="people">联系人：{{item.people}}</view>
+          <view class="statecreated">{{item.state}}</view>
+        </view>
+        <view class="part2">
+          <view class="phone">联系电话：{{item.phone}}</view>
+          <view class="repairequipment">报修设备：{{item.repairequipment}}</view>
+        </view>
+      </view>
+    </navigator>
+  </view>
+</view>
+<!--待处理-->
+<view hidden="{{currentTab!==2}}">
+  <view class="tips">共查询到{{pendinglength}}条数据~</view>
+  <view wx:for="{{pending}}" wx:key="id" wx:for-item="item">
+    <navigator url="../myreportrepairreading/myreportrepairreading?reportrepairid={{item._id}}">
+      <view class="modular">
+        <view class="part1">
+          <view class="time">{{item.launchtime}}</view>
+          <view class="people">联系人：{{item.people}}</view>
+          <view class="statepending">{{item.state}}</view>
+        </view>
+        <view class="part2">
+          <view class="phone">联系电话：{{item.phone}}</view>
+          <view class="repairequipment">报修设备：{{item.repairequipment}}</view>
+        </view>
+      </view>
+    </navigator>
+  </view>
+</view>
+<!--已处理-->
+<view hidden="{{currentTab!==3}}">
+  <view class="tips">共查询到{{processedlength}}条数据~</view>
+  <view wx:for="{{processed}}" wx:key="id" wx:for-item="item">
+    <navigator url="../myreportrepairreading/myreportrepairreading?reportrepairid={{item._id}}">
+      <view class="modular">
+        <view class="part1">
+          <view class="time">{{item.launchtime}}</view>
+          <view class="people">联系人：{{item.people}}</view>
+          <view class="stateprocessed">{{item.state}}</view>
+        </view>
+        <view class="part2">
+          <view class="phone">联系电话：{{item.phone}}</view>
+          <view class="repairequipment">报修设备：{{item.repairequipment}}</view>
+        </view>
+      </view>
+    </navigator>
+  </view>
+</view>

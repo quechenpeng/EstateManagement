@@ -1,0 +1,96 @@
+.form {
+  padding: 40rpx;
+}
+
+.row-group {
+  padding: 20rpx 0;
+  position: relative;
+  border-bottom: 1rpx solid #ddd;
+  display: flex;
+  height: 35px;
+}
+
+.row-group .icontips {
+  width: 8%;
+  height: 100%;
+  line-height: 35px;
+  font-size: 16px;
+}
+
+.row-group text {
+  width: 36%;
+  height: 100%;
+  font-size: 33rpx;
+  line-height: 35px;
+}
+
+.row-group input {
+  width: 56%;
+  height: 100%;
+  text-align: right;
+  line-height: 35px;
+}
+
+.row-group image {
+  width: 50px;
+  height: 35px;
+  line-height: 35px;
+  position: absolute;
+  right: 0;
+}
+
+.iconcolor {
+  width: 42px;
+  height: 30px;
+  color: #000000;
+}
+
+.txt {
+  color: #ccc;
+  font-size: 33rpx;
+}
+
+.section {
+  width: 56%;
+  height: 100%;
+  text-align: right;
+  line-height: 35px;
+}
+
+textarea {
+  height: 200px;
+  font-weight: 400;
+  border-bottom: 1rpx solid #ddd;
+}
+
+.descriptionlength {
+  position: absolute;
+  bottom: 0px;
+}
+
+.bottom {
+  margin-top: 40px;
+  width: 100%;
+  height: 40px;
+  display: flex;
+}
+
+.blank {
+  width: 10%;
+  height: 100%;
+}
+
+.submit {
+  width: 35%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  line-height: 20px;
+  color: #fff;
+  border: 2rpx solid #0079fe;
+  background-color: #0079fe;
+  font-size: 32rpx;
+  font-weight: bold;
+  letter-spacing: 1px;
+}

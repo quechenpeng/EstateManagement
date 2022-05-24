@@ -1,0 +1,8 @@
+<view class="search">
+  <navigator>
+    <view class="box">
+      <view class="iconfont icon-sousuo"></view>
+      <text>搜索</text>
+    </view>
+  </navigator>
+</view>

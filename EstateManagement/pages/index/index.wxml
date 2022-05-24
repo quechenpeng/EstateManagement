@@ -1,0 +1,84 @@
+<!-- logo -->
+<view class="logo">
+  <image src="https://i.loli.net/2021/03/11/XWL3yjn5G4TUVmM.png"></image>
+</view>
+<!-- 空白 -->
+<view class="blank"></view>
+<!-- 节日活动 -->
+<view class="box">
+  <view class="blankleft"></view>
+  <navigator url="../activity/activity">
+    <view class="content">
+      <view class="viewicon">
+        <view class="viewiconcircle">
+          <view class="iconfont icon-nav_activity" style="color: #2ae0c8"></view>
+        </view>
+      </view>
+      <view class="viewtitle">
+        <view class="viewtitleblanktop"></view>
+        <view class="viewchinese">节日活动</view>
+        <view class="viewtitleblankcenter"></view>
+        <view class="viewenglish">Festival Activities</view>
+        <view class="viewtitleblankbottom"></view>
+      </view>
+      <view class="viewarrow">
+        <view class="iconfont icon-jiantou_you" style="color: #bfbfbf;"></view>
+      </view>
+    </view>
+  </navigator>
+  <view class="blankright"></view>
+</view>
+<!-- 空白 -->
+<view class="blank"></view>
+<!-- 社区公告 -->
+<view class="box">
+  <view class="blankleft"></view>
+  <navigator url="../notice/notice">
+    <view class="content">
+      <view class="viewicon">
+        <view class="viewiconcircle">
+          <view class="iconfont icon-gonggao" style="color: #a7c5eb"></view>
+        </view>
+      </view>
+      <view class="viewtitle">
+        <view class="viewtitleblanktop"></view>
+        <view class="viewchinese">社区公告</view>
+        <view class="viewtitleblankcenter"></view>
+        <view class="viewenglish">Community Notice</view>
+        <view class="viewtitleblankbottom"></view>
+      </view>
+      <view class="viewarrow">
+        <view class="iconfont icon-jiantou_you" style="color: #bfbfbf;"></view>
+      </view>
+    </view>
+  </navigator>
+  <view class="blankright"></view>
+</view>
+<!-- 空白 -->
+<view class="blank"></view>
+<!-- 设备报修 -->
+<view class="box">
+  <view class="blankleft"></view>
+  <navigator url="../reportrepair/reportrepair">
+    <view class="content">
+      <view class="viewicon">
+        <view class="viewiconcircle">
+          <view class="iconfont icon-baoxiu-xuanzhong" style="color: #e3c887"></view>
+        </view>
+      </view>
+      <view class="viewtitle">
+        <view class="viewtitleblanktop"></view>
+        <view class="viewchinese">设备报修</view>
+        <view class="viewtitleblankcenter"></view>
+        <view class="viewenglish">Equipment Repair</view>
+        <view class="viewtitleblankbottom"></view>
+      </view>
+      <view class="viewarrow">
+        <view class="iconfont icon-jiantou_you" style="color: #bfbfbf;"></view>
+      </view>
+    </view>
+  </navigator>
+  <view class="blankright"></view>
+</view>
+<!-- 空白 -->
+<view class="blank"></view>

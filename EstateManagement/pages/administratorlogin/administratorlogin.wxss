@@ -1,0 +1,58 @@
+@import "../../styles/iconfont.wxss";
+
+.logo {
+  width: 100%;
+}
+
+.logo image {
+  width: 100%;
+}
+
+.form {
+  padding: 40rpx;
+}
+
+.row-group {
+  padding: 20rpx 0;
+  position: relative;
+  border-bottom: 1rpx solid #ddd;
+}
+
+.row-group text {
+  font-size: 28rpx;
+  padding: 10rpx 0;
+}
+
+.row-group input {
+  padding: 10rpx 0;
+}
+
+.txt {
+  color: #ccc;
+}
+
+.circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 60px;
+  background-color: #00cafc;
+  border: 1px solid #00cafc;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 80rpx;
+}
+
+.jinatoustyle {
+  line-height: 60px;
+  font-size: 25px;
+  color: #fff;
+}
+
+.submit {
+  margin-top: 80rpx;
+  color: #fff;
+  border: 2rpx solid #00c8b6;
+  background-color: #00c8b6;
+  font-size: 32rpx;
+  font-weight: bold;
+}

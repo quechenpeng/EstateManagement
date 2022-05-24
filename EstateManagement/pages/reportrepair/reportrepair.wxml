@@ -1,0 +1,74 @@
+<!-- 最上方图案 -->
+<view class="top">
+  <view class="black"></view>
+  <view class="white"></view>
+  <view class="topicon">
+    <view class="iconfont icon-baoxiu bxcolor"></view>
+  </view>
+</view>
+
+<!-- 报修信息的标题 -->
+<view class="title">
+  <view class="titleimage">
+    <view class="iconfont icon-xinxitianxie"></view>
+  </view>
+  <view class="titlecontent">报修信息</view>
+</view>
+
+<!-- 报修信息填写 -->
+<view class="form">
+  <!-- 联系人 -->
+  <view class="row-group">
+    <view class="icontips iconfont icon-lianxiren iconcolor"></view>
+    <text>联系人</text>
+    <input placeholder="请填写联系人" placeholder-class='txt' maxlength='20' value="{{truename}}"
+      bindinput="truenamechange" />
+  </view>
+  <!-- 联系电话 -->
+  <view class="row-group">
+    <view class="icontips iconfont icon-lianxidianhua iconcolor"></view>
+    <text>联系电话</text>
+    <input type="number" placeholder="请填写您的联系电话" placeholder-class='txt' maxlength='11' value="{{phone}}"
+      bindinput="phonechange" />
+  </view>
+  <!-- 报修设备 -->
+  <view class="row-group">
+    <view class="icontips iconfont icon-shebei iconcolor"></view>
+    <text>报修设备</text>
+    <input placeholder="请填写需要报修的设备" placeholder-class='txt' maxlength='20' value="{{repairequipment}}"
+      bindinput="repairequipmentchange" />
+  </view>
+  <!-- 描述 -->
+  <view class="row-group">
+    <view class="icontips iconfont icon-miaoshu iconcolor"></view>
+    <text>描述</text>
+  </view>
+  <textarea placeholder="请填写具体描述" placeholder-class='txt' bindinput="descriptionchange">
+    <view class="descriptionlength">{{descriptionlength}}/140</view>
+  </textarea>
+  <!-- 预约时间 -->
+  <view class="row-group">
+    <view class="icontips iconfont icon-shijian iconcolor"></view>
+    <text>预约时间</text>
+    <view class="section">
+      <picker mode="date" value="{{dates}}" start="{{dates}}" end="2022-6-30" bindchange="bindDateChange">
+        {{dates}}
+      </picker>
+    </view>
+  </view>
+  <!-- 楼栋 -->
+  <view class="row-group">
+    <view class="icontips iconfont icon-menpaihao iconcolor"></view>
+    <text>楼栋</text>
+    <view class="section">
+      <picker mode="multiSelector" range="{{building}}" bindchange="buildingchange">
+        {{b}}栋{{f}}{{n}}室
+      </picker>
+    </view>
+  </view>
+</view>
+
+<!-- 提交按钮 -->
+<view>
+  <button class="submit" bindtap="submit">提交</button>
+</view>

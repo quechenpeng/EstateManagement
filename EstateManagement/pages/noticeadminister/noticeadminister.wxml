@@ -1,0 +1,28 @@
+<!-- 提示 -->
+<view class="tips">共发布了{{noticelength}}条公告~</view>
+<!-- 公告总览 -->
+<view class="form">
+  <view wx:for="{{notice}}" wx:key="id" wx:for-item="item">
+    <view class="modular">
+      <navigator url="../noticeupdate/noticeupdate?noticeid={{item._id}}">
+        <view class="left">
+          <view class="lefttop">
+            <view class="time">{{item.year}}-{{item.monthday}}</view>
+          </view>
+          <view class="leftbottom">
+            <view class="title">公告标题：{{item.title}}</view>
+          </view>
+        </view>
+        <view class="right">
+          <view class="readingvolume">阅读量：{{item.readingvolume}}</view>
+        </view>
+      </navigator>
+    </view>
+  </view>
+</view>
+<!-- 去发布 -->
+<view class="bottom">
+  <view class="circle" bindtap="launchnotice">
+    <view class="iconfont icon-chuangjian create"></view>
+  </view>
+</view>

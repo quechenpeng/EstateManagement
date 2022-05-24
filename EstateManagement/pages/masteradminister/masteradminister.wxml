@@ -1,0 +1,17 @@
+<!-- 报修师傅展示 -->
+<view wx:for="{{master}}" wx:key="id" wx:for-item="item">
+  <view class="modular">
+    <view class="left">
+      <view class="headportrait">
+        <image src="{{item.headportraitsrc}}"></image>
+      </view>
+    </view>
+    <view class="center">
+      <view class="name">姓名：{{item.name}}</view>
+      <view class="phone">联系电话：{{item.phone}}</view>
+    </view>
+    <view class="right">
+      <view class="monadic">处理单数：{{item.monadicnumber}}</view>
+    </view>
+  </view>
+</view>

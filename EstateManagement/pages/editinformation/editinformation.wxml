@@ -1,0 +1,50 @@
+<!-- 个人信息修改 -->
+<view class="form">
+  <!-- 姓名 -->
+  <view class="row-group">
+    <view class="icontips iconfont icon-xingming iconcolor"></view>
+    <text>姓名</text>
+    <input placeholder="请填写姓名" placeholder-class='txt' maxlength='10' value="{{truename}}" bindinput="truenamechange" />
+  </view>
+  <!-- 昵称 -->
+  <view class="row-group">
+    <view class="icontips iconfont icon-nicheng iconcolor"></view>
+    <text>昵称</text>
+    <input type="text" placeholder="请填写昵称" placeholder-class='txt' maxlength='10' value="{{nickname}}"
+      bindinput="nicknamechange" />
+  </view>
+  <!-- 楼栋 -->
+  <view class="row-group">
+    <view class="icontips iconfont icon-loudonghquyu iconcolor"></view>
+    <text>楼栋</text>
+    <view class="section">
+      <picker mode="selector" range="{{building}}" bindchange="buildingchange">
+        {{b}}栋
+      </picker>
+    </view>
+  </view>
+  <!-- 楼层 -->
+  <view class="row-group">
+    <view class="icontips iconfont icon-louceng1 iconcolor"></view>
+    <text>楼层</text>
+    <view class="section">
+      <picker mode="selector" range="{{floor}}" bindchange="floorchange">
+        {{f}}层
+      </picker>
+    </view>
+  </view>
+  <!-- 门牌号 -->
+  <view class="row-group">
+    <view class="icontips iconfont icon-menpaihao iconcolor"></view>
+    <text>门牌号</text>
+    <view class="section">
+      <picker mode="selector" range="{{number}}" bindchange="numberchange">
+        {{n}}室
+      </picker>
+    </view>
+  </view>
+</view>
+<!-- 提交 -->
+<view>
+  <button class="submit" bindtap="updatemessage">修改</button>
+</view>

@@ -1,0 +1,80 @@
+<!-- 报修信息修改 -->
+<view class="form">
+  <!-- 联系人 -->
+  <view class="row-group">
+    <view class="icontips iconfont icon-xingming iconcolor"></view>
+    <text>联系人</text>
+    <input placeholder="请填写姓名" placeholder-class='txt' maxlength='10' value="{{people}}" bindinput="peoplechange"
+      disabled='{{inputstyle}}' />
+  </view>
+  <!-- 联系电话 -->
+  <view class="row-group">
+    <view class="icontips iconfont icon-lianxidianhua iconcolor"></view>
+    <text>联系电话</text>
+    <input type="number" placeholder="请填写您的联系电话" placeholder-class='txt' maxlength='11' value="{{phone}}"
+      bindinput="phonechange" disabled='{{inputstyle}}' />
+  </view>
+  <!-- 报修设备 -->
+  <view class="row-group">
+    <view class="icontips iconfont icon-shebei iconcolor"></view>
+    <text>报修设备</text>
+    <input placeholder="请填写需要报修的设备" placeholder-class='txt' maxlength='20' value="{{repairequipment}}"
+      bindinput="repairequipmentchange" disabled='{{inputstyle}}' />
+  </view>
+  <!-- 描述 -->
+  <view class="row-group">
+    <view class="icontips iconfont icon-miaoshu iconcolor"></view>
+    <text>描述</text>
+    <input placeholder="请填写描述信息" placeholder-class='txt' maxlength='100' value="{{description}}"
+      bindinput="descriptionchange" disabled='{{inputstyle}}' />
+  </view>
+  <!-- 创建时间 -->
+  <view class="row-group">
+    <view class="icontips iconfont icon-chuangjianshijian iconcolor"></view>
+    <text>创建时间</text>
+    <input maxlength='20' value="{{launchtime}}" disabled='true' />
+  </view>
+  <!-- 预约时间 -->
+  <view class="row-group">
+    <view class="icontips iconfont icon-shijian iconcolor"></view>
+    <text>预约时间</text>
+    <view class="section">
+      <picker mode="date" value="{{appointmenttime}}" start="{{appointmenttime}}" end="2022-6-30"
+        bindchange="bindDateChange" disabled='{{inputstyle}}'>
+        {{appointmenttime}}
+      </picker>
+    </view>
+  </view>
+  <!-- 楼栋 -->
+  <view class="row-group">
+    <view class="icontips iconfont icon-menpaihao iconcolor"></view>
+    <text>楼栋</text>
+    <view class="section">
+      <picker mode="multiSelector" range="{{building}}" bindchange="buildingchange" disabled="{{inputstyle}}">
+        {{b}}栋{{f}}{{n}}室
+      </picker>
+    </view>
+  </view>
+  <!-- 报修师傅 -->
+  <view class="row-group" style="display: {{masternamestyle}}">
+    <view class="icontips iconfont icon-- iconcolor"></view>
+    <text>报修师傅</text>
+    <input maxlength='10' value="{{mastername}}" disabled='false' />
+  </view>
+  <!-- 状态 -->
+  <view class="row-group">
+    <view class="icontips iconfont icon-yewuzhuangtai iconcolor"></view>
+    <text>报修单状态</text>
+    <input maxlength='10' value="{{state}}" disabled='false' />
+  </view>
+</view>
+<!-- 底部 -->
+<view class="bottom">
+  <view class="blank"></view>
+  <!-- 提交 -->
+  <button class="submit" bindtap="updatereportrepair" disabled='{{buttonstyle}}'>{{buttontips}}</button>
+  <view class="blank"></view>
+  <!-- 撤销 -->
+  <button class="submit" bindtap="canclereportrepair">撤销报修</button>
+  <view class="blank"></view>
+</view>

@@ -1,0 +1,21 @@
+<!-- 用户展示 -->
+<view wx:for="{{user}}" wx:key="id" wx:for-item="item">
+  <view class="modular">
+    <navigator url="../userreading/userreading?userid={{item._id}}">
+      <view class="left">
+        <view class="headportrait">
+          <image src="{{item.headportraitsrc}}"></image>
+        </view>
+      </view>
+      <view class="right">
+        <view class="righttop">
+          <view class="name">姓名：{{item.truename}}</view>
+          <view class="address">{{item.building}}栋{{item.floor}}{{item.number}}室</view>
+        </view>
+        <view class="rightbottom">
+          <view class="phone">联系电话：{{item.phone}}</view>
+        </view>
+      </view>
+    </navigator>
+  </view>
+</view>

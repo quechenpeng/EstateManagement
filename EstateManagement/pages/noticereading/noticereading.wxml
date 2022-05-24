@@ -1,0 +1,42 @@
+<view class="noticeandcomment">
+  <!-- 公告内容 -->
+  <view class="box">
+    <view class="title">
+      <view>{{title}}</view>
+    </view>
+    <view class="content">
+      <view>{{content}}</view>
+    </view>
+    <view class="date">
+      <view>{{year}}-{{monthday}}</view>
+    </view>
+  </view>
+  <view class="blank" style="display: {{tip1}}"></view>
+  <view class="tip" style="display: {{tip2}}">
+    暂无评论~
+  </view>
+  <!-- 评论内容 -->
+  <view class="row-group" wx:for="{{comment}}" wx:key="id" wx:for-item="item">
+    <view class="left">
+      <view class="headportrait">
+        <image src="{{item.headportraitsrc}}"></image>
+      </view>
+    </view>
+    <view class="right">
+      <view class="nickname">
+        {{item.nickname}}
+      </view>
+      <view class="commentcontent">
+        {{item.content}}
+      </view>
+      <view class="datetime">
+        {{item.date}} {{item.time}}
+      </view>
+    </view>
+  </view>
+</view>
+<!-- 我来评论 -->
+<view class='ask'>
+  <input class='input' type='text' placeholder='我来评论' bindinput='comment' value='{{commentcontent}}'></input>
+  <button class='button' bindtap='release'>发布</button>
+</view>

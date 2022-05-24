@@ -1,0 +1,78 @@
+<!-- 最上方 -->
+<view class="top">
+  <!-- 头像 -->
+  <view class="headportrait">
+    <view class="iconfont icon-guanliyuan administratorheadportrait"></view>
+  </view>
+  <!-- 欢迎您，管理员 -->
+  <view class="language">
+    <view class="welcomeadministrator">欢迎您，管理员</view>
+  </view>
+</view>
+<!-- 管理员功能 -->
+<view class="service">
+  <!-- 活动管理 -->
+  <view class="modular">
+    <navigator url="../activityadminister/activityadminister">
+      <view class="rricon">
+        <view class="iconfont icon-huodong iconsize"></view>
+      </view>
+      <view class="rrtitle">活动管理</view>
+      <view class="rrarrow">
+        <view class="iconfont icon-jiantou jiantou"></view>
+      </view>
+    </navigator>
+  </view>
+  <!-- 公告管理 -->
+  <view class="modular">
+    <navigator url="../noticeadminister/noticeadminister">
+      <view class="rricon">
+        <view class="iconfont icon-gonggao1 iconsize"></view>
+      </view>
+      <view class="rrtitle">公告管理</view>
+      <view class="rrarrow">
+        <view class="iconfont icon-jiantou jiantou"></view>
+      </view>
+    </navigator>
+  </view>
+  <!-- 报修管理 -->
+  <view class="modular">
+    <navigator url="../reportrepairadminister/reportrepairadminister">
+      <view class="rricon">
+        <view class="iconfont icon-baoxiu2 iconsize"></view>
+      </view>
+      <view class="rrtitle">报修管理</view>
+      <view class="rrarrow">
+        <view class="iconfont icon-jiantou jiantou"></view>
+      </view>
+    </navigator>
+  </view>
+  <!-- 用户管理 -->
+  <view class="modular">
+    <navigator url="../useradminister/useradminister">
+      <view class="rricon">
+        <view class="iconfont icon-zhuhuguanli iconsize"></view>
+      </view>
+      <view class="rrtitle">用户管理</view>
+      <view class="rrarrow">
+        <view class="iconfont icon-jiantou jiantou"></view>
+      </view>
+    </navigator>
+  </view>
+  <!-- 报修师傅管理 -->
+  <view class="modular">
+    <navigator url="../masteradminister/masteradminister">
+      <view class="rricon">
+        <view class="iconfont icon-master_circle iconsize"></view>
+      </view>
+      <view class="rrtitle">报修师傅</view>
+      <view class="rrarrow">
+        <view class="iconfont icon-jiantou jiantou"></view>
+      </view>
+    </navigator>
+  </view>
+</view>
+<!-- 回到首页 -->
+<view>
+  <button open-type="getUserInfo" class="backhome" bindtap="backhome">回到首页</button>
+</view>

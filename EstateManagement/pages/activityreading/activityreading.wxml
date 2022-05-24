@@ -1,0 +1,15 @@
+<!-- 具体活动 -->
+<view class="box">
+  <view class="image">
+    <image src="{{src}}"></image>
+  </view>
+  <view class="title">
+    <view>{{title}}</view>
+  </view>
+  <view class="content">
+    <view>{{content}}</view>
+  </view>
+  <view class="date">
+    <view>{{year}}-{{monthday}}</view>
+  </view>
+</view>
