@@ -1,2 +1,3 @@
 # EstateManagement
-简简单单的毕业设计
+
+https://github.com/quechenpeng/EstateManagement.git
